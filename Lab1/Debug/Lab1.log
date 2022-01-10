@@ -1,0 +1,34 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Lab2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  MainGame.cpp
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(176,32): warning C4244: 'argument': conversion from 'Sint32' to 'float', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(254,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(255,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(256,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(482,88): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(482,62): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(490,65): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(490,62): warning C4244: 'argument': conversion from 'float' to 'GLsizei', possible loss of data
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(524,45): warning C4244: 'argument': conversion from 'genType' to 'T', possible loss of data
+          with
+          [
+              genType=int
+          ]
+          and
+          [
+              T=float
+          ]
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(539,45): warning C4244: 'argument': conversion from 'genType' to 'T', possible loss of data
+          with
+          [
+              genType=int
+          ]
+          and
+          [
+              T=float
+          ]
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\deps\include\glm\detail\func_geometric.inl(188,3): error C2338: 'normalize' accepts only floating-point inputs
+G:\4th Year Work\Games Programming 3\Games Programming 3 Submission\GP3 L7 Solution\Lab1\MainGame.cpp(524): message : see reference to function template instantiation 'genType glm::normalize<int>(const genType &)' being compiled
+          with
+          [
+              genType=int
+          ]
