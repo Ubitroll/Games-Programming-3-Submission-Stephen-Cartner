@@ -524,7 +524,10 @@ void MainGame::runAI()
 		aiShip.moveForward(1*deltaTime);
 
 		// If the AI gets within a set range of the player
-		float distance = glm::sqrt((aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) * (aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) + (aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) * (aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) + (aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z) * (aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z));
+		float distance = glm::sqrt(
+			(aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) * (aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) + 
+			(aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) * (aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) + 
+			(aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z) * (aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z));
 		if (distance < 30)
 		{
 			// Set state to ATTACK
@@ -539,7 +542,10 @@ void MainGame::runAI()
 		fireMissiles(aiShip);
 
 		// If the AI gets out of a set range of the player
-		float distance = glm::sqrt((aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) * (aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) + (aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) * (aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) + (aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z) * (aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z));
+		float distance = glm::sqrt(
+			(aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) * (aiShip.getTM().GetPos()->x - playerShip.getTM().GetPos()->x) + 
+			(aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) * (aiShip.getTM().GetPos()->y - playerShip.getTM().GetPos()->y) + 
+			(aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z) * (aiShip.getTM().GetPos()->z - playerShip.getTM().GetPos()->z));
 		if (distance > 30)
 		{
 			// Set state to TRACK
